@@ -10,7 +10,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:vue/vue3-essential", // eslint-plugin-vue
     "plugin:@typescript-eslint/recommended", // typescript 规则
-    "@vue/prettier"
+    "@vue/prettier",
+    "./.eslintrc-auto-import.json"
   ],
   overrides: [],
   // 可以解析.vue 文件
@@ -22,6 +23,7 @@ module.exports = {
   },
   plugins: ["vue", "@typescript-eslint"],
   rules: {
+    "vue/multi-word-component-names": "off",
     "prettier/prettier": [
       // 自带的prettier规则
       "error",

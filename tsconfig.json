@@ -7,8 +7,18 @@
     "sourceMap": true, // 启动sourcemap 调试
     "jsx": "preserve", // 不允许ts编译jsx语法
     "esModuleInterop": true, // es6 和 commonjs 转化
-    "lib": ["esnext", "dom"] // 支持esnext和dom语法
+    "lib": ["esnext", "dom"], // 支持esnext和dom语法
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // @符号的真实含义， 还需要配置vite别名， 和 declare module
+    }
   },
   // 编译那些文件
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "./auto-imports.d.ts"
+  ]
 }
