@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     // 环境 针对那些环境的语法
     browser: true,

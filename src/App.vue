@@ -5,8 +5,10 @@
   <router-view></router-view>
 
   <Todo></Todo>
+  <Counter></Counter>
 </template>
 
 <script lang="ts" setup>
 import Todo from "@/components/todo/index.vue"
+import Counter from "@/components/counter/index.vue"
 </script>

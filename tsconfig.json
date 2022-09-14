@@ -20,5 +20,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "./auto-imports.d.ts"
-  ]
+  ],
+  "exclude": ["src/tests/**/*.*"]
 }
